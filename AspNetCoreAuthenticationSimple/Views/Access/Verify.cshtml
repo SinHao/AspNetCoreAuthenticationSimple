@@ -1,0 +1,19 @@
+﻿
+@if ((bool)this.Model)
+{
+    <h1>Pass</h1>
+}
+else
+{
+    <h1>NG</h1>
+}
+
+@Html.ActionLink("Logout", "Logout", "Access")
+<hr />
+@Html.ActionLink("Go to Authorization test", "Index", "FilterTest")
+<hr />
+@Html.ActionLink("Go to Resource test", "ResourceFileterTest", "FilterTest")
+<hr />
+@Html.ActionLink("Go to Action test", "ActionFilterTest", "FilterTest")
+<hr />
+@Html.ActionLink("Go to Result test", "ActionFilterTest", "FilterTest")
